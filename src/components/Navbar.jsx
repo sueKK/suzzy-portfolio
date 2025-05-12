@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = '/Resume.pdf';
+    const resumeUrl = 'https://www.canva.com/design/DAGbynmqXEE/RFMFrT_08OgKPLgPU9hUaw/edit?utm_content=DAGbynmqXEE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton';
     window.open(resumeUrl);
   };
 
@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 bg-primary`}
+        className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 bg-just-purple`}
       >
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           <Link
@@ -61,7 +61,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+      
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
               SUZZY&nbsp;
               <span className="sm:block hidden">KAWIRA</span>

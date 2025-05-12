@@ -10,6 +10,9 @@ module.exports = {
         'black-100': '#100d25',
         'black-200': '#090325',
         'white-100': '#f3f3f3',
+        'purple': '#260339',
+        'baby-purple': '#9775AA',
+        'just-purple':'#674779',
       },
       boxShadow: {
         card: '0 35px 120px -15px #211e35',

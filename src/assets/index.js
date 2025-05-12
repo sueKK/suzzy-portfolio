@@ -7,15 +7,13 @@ import eduskill from "./company/eduskill.png";
 import python from "./tech-stack/python.png";
 import c from "./tech-stack/c.png";
 import cpp from "./tech-stack/cpp.png";
-import java from "./tech-stack/java.png";
+import javaScript from "./tech-stack/javaScript.png";
 
 // Import project images
-import weatherpedia from "./projects/WeatherPedia.png";
-import termpw from "./projects/termpw.png";
-import payloadmaster from "./projects/payloadmaster.png";
-import mhft from "./projects/mhft.png";
-import sketcher from "./projects/sketcher.png";
-import CompileVortex from "./projects/CompileVortex.png";
+import spotify_img from "./projects/spotify_img.png";
+import simpleshell_img from "./projects/simpleshell_img.png";
+import realestate_img from "./projects/realestate_img.png";
+import valeriavillas_img from "./projects/valeriavillas_img.png";
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -39,7 +37,7 @@ export {
   python,
   c,
   cpp,
-  java,
+  javaScript,
   github,
   css,
   git,
@@ -49,14 +47,12 @@ export {
   reactjs,
   tailwind,
   threejs,
-  weatherpedia,
-  termpw,
-  payloadmaster,
-  mhft,
-  sketcher,
-  CompileVortex,
   logo,
   menu,
   close,
   eduskill,
+  realestate_img,
+  valeriavillas_img,
+  simpleshell_img,
+  spotify_img,
 };

@@ -17,7 +17,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-just-purple p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -60,8 +60,8 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p variants={fadeIn("", "", 0.1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           Following projects showcase my skills and experience through examples
-          of my work. Each project is briefly described with links to code
-          repositories in it.
+          of my work. Each project is briefly described and links to code are available through the github icon 
+          which will take you to the respective Github repositories.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
