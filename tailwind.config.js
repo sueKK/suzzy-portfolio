@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{js,jsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   mode: 'jit',
   theme: {
     extend: {
@@ -10,7 +10,7 @@ module.exports = {
         'black-100': '#100d25',
         'black-200': '#090325',
         'white-100': '#f3f3f3',
-        'purple': '#260339',
+        'purple': '#1c0429',
         'baby-purple': '#9775AA',
         'just-purple':'#674779',
       },
@@ -21,7 +21,7 @@ module.exports = {
         xs: '450px',
       },
       backgroundImage: {
-        'hero-pattern': `url(/herobg.png)`,
+        'hero-pattern': "url('/src/assets/herobg1.png')",
       },
     },
   },

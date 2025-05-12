@@ -40,7 +40,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hi, I'm Suzzy Kawira, a passionate Software Engineer and Digital Marketer
+        I'm a passionate Software Engineer and Digital Marketer
          dedicated to building creative and impactful solutions. With a strong background in 
          front-end development, UI/UX design, content creation, 
          I enjoy transforming ideas into experiences that connect with people. Whether working
