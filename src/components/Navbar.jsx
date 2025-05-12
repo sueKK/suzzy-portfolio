@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = 'https://www.canva.com/design/DAGbynmqXEE/RFMFrT_08OgKPLgPU9hUaw/edit?utm_content=DAGbynmqXEE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton';
+    const resumeUrl = 'https://drive.google.com/file/d/1wJKtUUltgIK_KLTHfu-u_KF2u5itvtZB/view?usp=sharing';
     window.open(resumeUrl);
   };
 
