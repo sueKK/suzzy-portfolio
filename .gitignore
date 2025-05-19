@@ -8,7 +8,8 @@ dist/
 *.log
 
 # System files
-.DS_Store
+.DS_Storegit 
 Thumbs.db
 
 # Environment files
+node_modules
