@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or 'master', depending on your default branch
+      - main
 
 permissions:
   contents: write
@@ -20,12 +20,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: yarn  # 💡 cache dependencies
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
