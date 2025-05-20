@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 
 const ComputerModel = ({ isMobile }) => {
   const { scene } = useGLTF(
-    "/assets/desktop_pc/scene.gltf",
+    '/suzzy-portfolio/assets/desktop_pc/scene.gltf',
     undefined,
     (loader) => {
       const dracoLoader = new DRACOLoader();
