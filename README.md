@@ -1,6 +1,8 @@
 <div>
   
-<p align="center">A modern, responsive portfolio website showcasing professional experience, projects, and skills. Built with React, Vite, and Tailwind CSS, featuring smooth animations and interactive 3D elements. ✨</p>
+<p align="center">A modern, responsive portfolio website showcasing professional experience, projects, and skills. Built with React, Vite, and Tailwind CSS, featuring smooth animations and interactive 3D elements. ✨
+Check it out https://suekk.github.io/suzzy-portfolio/
+</p>
 
 </div>
 
