@@ -56,7 +56,7 @@ export const experiences = [
     company_name: "Web Developer",
     icon: eduskill,
     iconBg: "#161329",
-    date: "Nov 2024 - May 2025",
+    date: "Nov 2024 - Present",
     points: [
       "Designed, developed, and optimized responsive websites for clients.",
       "Collaborated with designers and marketers to create visually appealing, high performing sites. Built and maintained websites using React, Next.js, and WordPress.",
