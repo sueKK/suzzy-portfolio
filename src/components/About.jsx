@@ -40,13 +40,29 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a passionate Software Engineer and Digital Marketer
-         dedicated to building creative and impactful solutions. With a strong background in 
-         front-end development, UI/UX design, content creation, 
-         I enjoy transforming ideas into experiences that connect with people. Whether working
-        on personal projects or collaborating with teams, I focus on blending innovation, strategy,
-        and attention to detail. I'm always excited to learn, grow, and take on new challenges that
-        push the boundaries of my skills. Welcome to my portfolio
+        <span className="block mb-4 ">
+           I’m a passionate Software Engineer, Digital Marketer, and Cybersecurity student dedicated to building creative and impactful solutions. Currently working in digital marketing at Valeria Villas, I focus on creating compelling campaigns, managing content strategies, and driving brand growth through innovative digital experiences.
+        </span>
+
+        <span className="block mb-4 ">
+            With a strong foundation in front-end development, UI/UX design, and content creation, I enjoy transforming ideas into engaging, user-centered experiences that truly connect with people.
+        </span>
+
+        <span className="block mb-4  ">
+            Alongside my work, I’m pursuing Cybersecurity studies at Zetech University, expanding my knowledge in building secure and reliable digital systems.
+        </span>
+
+        <span className="block mb-4 ">
+            Whether working on personal projects or collaborating with teams, I bring together creativity, strategy, and attention to detail to deliver meaningful results.
+        </span>
+
+        <span className="block font-medium text-white mb-4 ">
+           I’m always eager to learn, grow, and take on new challenges that push the boundaries of my skills.
+        </span>
+
+        <span className="block italic text-gray-400">
+            Welcome to my portfolio.
+        </span>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
