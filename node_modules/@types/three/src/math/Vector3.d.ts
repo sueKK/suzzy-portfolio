@@ -29,6 +29,8 @@ export interface Vector3Like {
  * c.crossVectors( a, b );
  */
 export class Vector3 {
+    static readonly isVector3: boolean;
+
     constructor(x?: number, y?: number, z?: number);
 
     /**
@@ -45,7 +47,6 @@ export class Vector3 {
      * @default 0
      */
     z: number;
-    readonly isVector3: true;
 
     /**
      * Sets value of this vector.
@@ -98,12 +99,12 @@ export class Vector3 {
      */
     addVectors(a: Vector3Like, b: Vector3Like): this;
 
-    addScaledVector(v: Vector3, s: number): this;
+    addScaledVector(v: Vector3Like, s: number): this;
 
     /**
      * Subtracts v from this vector.
      */
-    sub(a: Vector3Like): this;
+    sub(v: Vector3Like): this;
 
     subScalar(s: number): this;
 
@@ -123,7 +124,7 @@ export class Vector3 {
 
     applyEuler(euler: Euler): this;
 
-    applyAxisAngle(axis: Vector3, angle: number): this;
+    applyAxisAngle(axis: Vector3Like, angle: number): this;
 
     applyMatrix3(m: Matrix3): this;
 
@@ -208,7 +209,7 @@ export class Vector3 {
     /**
      * Sets this vector to cross product of itself and v.
      */
-    cross(a: Vector3Like): this;
+    cross(v: Vector3Like): this;
 
     /**
      * Sets this vector to cross product of a and b.

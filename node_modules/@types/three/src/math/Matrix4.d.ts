@@ -42,7 +42,7 @@ export type Matrix4Tuple = [
  * m.multiply( m3 );
  */
 export class Matrix4 {
-    readonly isMatrix4: true;
+    static readonly isMatrix4: boolean;
 
     /**
      * Array with matrix values.
@@ -246,6 +246,7 @@ export class Matrix4 {
         near: number,
         far: number,
         coordinateSystem?: CoordinateSystem,
+        reversedDepth?: boolean,
     ): this;
 
     /**
@@ -259,6 +260,7 @@ export class Matrix4 {
         near: number,
         far: number,
         coordinateSystem?: CoordinateSystem,
+        reversedDepth?: boolean,
     ): this;
 
     equals(matrix: Matrix4): boolean;

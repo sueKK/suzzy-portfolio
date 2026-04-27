@@ -39,7 +39,7 @@ export * from "./core/Object3D.js";
 export * from "./core/Raycaster.js";
 export * from "./core/RenderTarget.js";
 export * from "./core/RenderTarget3D.js";
-export * from "./core/RenderTargetArray.js";
+export * from "./core/Timer.js";
 export * from "./core/Uniform.js";
 export * from "./core/UniformsGroup.js";
 export * from "./extras/Controls.js";
@@ -105,6 +105,7 @@ export * from "./math/Euler.js";
 export * from "./math/Frustum.js";
 export * from "./math/FrustumArray.js";
 export * from "./math/Interpolant.js";
+export * from "./math/interpolants/BezierInterpolant.js";
 export * from "./math/interpolants/CubicInterpolant.js";
 export * from "./math/interpolants/DiscreteInterpolant.js";
 export * from "./math/interpolants/LinearInterpolant.js";
@@ -139,9 +140,18 @@ export * from "./objects/SkinnedMesh.js";
 export * from "./objects/Sprite.js";
 export * from "./renderers/WebGL3DRenderTarget.js";
 export * from "./renderers/WebGLArrayRenderTarget.js";
-export * from "./renderers/WebGLCubeRenderTarget.js";
 export * from "./renderers/WebGLRenderTarget.js";
-export * from "./renderers/webxr/WebXRController.js";
+export {
+    WebXRController,
+    type WebXRSpaceEventMap,
+    type XRControllerEventType,
+    type XRGripSpace,
+    type XRHandInputState,
+    type XRHandJoints,
+    type XRHandSpace,
+    type XRJointSpace,
+    type XRTargetRaySpace,
+} from "./renderers/webxr/WebXRController.js";
 export * from "./scenes/Fog.js";
 export * from "./scenes/FogExp2.js";
 export * from "./scenes/Scene.js";
@@ -149,15 +159,17 @@ export * from "./textures/CanvasTexture.js";
 export * from "./textures/CompressedArrayTexture.js";
 export * from "./textures/CompressedCubeTexture.js";
 export * from "./textures/CompressedTexture.js";
+export * from "./textures/CubeDepthTexture.js";
 export * from "./textures/CubeTexture.js";
 export * from "./textures/Data3DTexture.js";
 export * from "./textures/DataArrayTexture.js";
 export * from "./textures/DataTexture.js";
-export * from "./textures/DepthArrayTexture.js";
 export * from "./textures/DepthTexture.js";
+export * from "./textures/ExternalTexture.js";
 export * from "./textures/FramebufferTexture.js";
+export * from "./textures/HTMLTexture.js";
 export * from "./textures/Source.js";
 export * from "./textures/Texture.js";
 export * from "./textures/VideoFrameTexture.js";
 export * from "./textures/VideoTexture.js";
-export { createCanvasElement } from "./utils.js";
+export { createCanvasElement, error, getConsoleFunction, log, setConsoleFunction, warn, warnOnce } from "./utils.js";

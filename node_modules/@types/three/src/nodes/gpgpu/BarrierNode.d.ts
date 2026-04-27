@@ -1,12 +1,15 @@
 import Node from "../core/Node.js";
-import { ShaderNodeObject } from "../tsl/TSLCore.js";
 
 declare class BarrierNode extends Node {
     scope: string;
 
+    readonly isBarrierNode: boolean;
+
     constructor(scope: string);
 }
 
-export const workgroupBarrier: () => ShaderNodeObject<Node>;
-export const storageBarrier: () => ShaderNodeObject<Node>;
-export const textureBarrier: () => ShaderNodeObject<Node>;
+export default BarrierNode;
+
+export const workgroupBarrier: () => Node;
+export const storageBarrier: () => Node;
+export const textureBarrier: () => Node;

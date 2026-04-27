@@ -1,38 +1,45 @@
-import { NodeRepresentation, ShaderNodeObject } from "../tsl/TSLCore.js";
 import Node from "./Node.js";
 
-export default class VarNode extends Node {
-    node: Node;
+interface VarNodeInterface<TNode> {
+    node: TNode;
     name: string | null;
 
     readonly isVarNode: true;
 
     readOnly: boolean;
 
-    constructor(node: Node, name?: string | null, readOnly?: boolean);
+    intent: boolean;
+
+    setIntent(value: boolean): this;
+    getIntent(): boolean;
 }
 
-export const Var: (node: Node, name?: string | null) => ShaderNodeObject<VarNode>;
+declare const VarNode: {
+    new<TNodeType, TNode>(node: TNode, name?: string | null, readOnly?: boolean): VarNode<TNodeType, TNode>;
+};
 
-export const Const: (node: Node, name?: string | null) => ShaderNodeObject<VarNode>;
+type VarNode<TNodeType, TNode> = Node<TNodeType> & VarNodeInterface<TNode>;
 
-declare module "../tsl/TSLCore.js" {
-    interface NodeElements {
-        toVar: (node: NodeRepresentation, name?: string | null) => ShaderNodeObject<VarNode>;
-        toConst: (node: NodeRepresentation, name?: string | null) => ShaderNodeObject<VarNode>;
-    }
-}
+export default VarNode;
 
-/**
- * @deprecated Use ".toVar()" instead.
- */
-export const temp: (node: NodeRepresentation, name?: string | null) => ShaderNodeObject<VarNode>;
+export const Var: <TNodeType, TNode extends Node<TNodeType>>(
+    node: TNode,
+    name?: string | null,
+) => VarNode<TNodeType, TNode>;
 
-declare module "../tsl/TSLCore.js" {
-    interface NodeElements {
-        /**
-         * @deprecated Use ".toVar()" instead.
-         */
-        temp: typeof temp;
+export const Const: <TNodeType, TNode extends Node<TNodeType>>(
+    node: TNode,
+    name?: string | null,
+) => VarNode<TNodeType, TNode>;
+
+export const VarIntent: <TNodeType, TNode extends Node<TNodeType>>(node: TNode) => VarNode<TNodeType, TNode>;
+
+declare module "./Node.js" {
+    interface NodeExtensions<TNodeType> {
+        toVar: (name?: string | null) => VarNode<TNodeType, this>;
+
+        toConst: (name?: string | null) => VarNode<TNodeType, this>;
+
+        toVarIntent: () => VarNode<TNodeType, this>;
     }
 }
