@@ -65,6 +65,39 @@ export const experiences = [
       "Integrated third-party tools like Google Analytics, marketing automation platforms, and CRM systems.",
     ],
   },
+
+   {
+    title: "Valeria Villas",
+    company_name: "Digital Marketer",
+    icon: eduskill,
+    iconBg: "#161329",
+    date: "July 2025 - Present",
+    points: [
+      "Plan and execute end-to-end digital marketing strategies across social media, web, and campaigns",
+      "Manage social media platforms (Instagram, LinkedIn, Facebook, Tiktok, X), including content planning, posting, and audience engagement",
+      "Create compelling copy and visual content to strengthen brand identity and drive engagement",
+      "Implement SEO strategies including keyword research, on-page optimization, and content structuring to improve website visibility",
+      "Support and execute email marketing campaigns and digital promotions",
+      "Contribute to paid marketing efforts (Meta Ads / Google Ads) including content and audience targeting",
+      "Support sales initiatives such as office activations, partnerships, and lead generation campaigns",
+      "Monitor analytics (Google Analytics, social insights) to track performance and optimize strategies",
+      "Collaborate across teams to align marketing, branding, and technical execution",
+    ],
+  },
+
+   {
+    title: "Siwel Design Studio",
+    company_name: "Digital Marketer",
+    icon: eduskill,
+    iconBg: "#161329",
+    date: "March 2024 - Jan 2025",
+    points: [
+      "Developed responsive websites using React and modern frontend tools",
+      "Collaborated with marketing teams to align website structure with campaign goals",
+      "Improved website performance and user experience for better engagement",
+      "Assisted in integrating marketing tools and analytics tracking",
+    ],
+  },
 ];
 
 export const projects = [
